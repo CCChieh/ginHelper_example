@@ -9,9 +9,9 @@ import (
 
 func (h *Helper) HelloHandler() (r *ginHelper.Router) {
 	return &ginHelper.Router{
-		Param:  new(service.Hello),
-		Path:   "/",
-		Method: "GET",
+		Param:  new(service.Hello), //所需要的参数
+		Path:   "/",                //路由路径
+		Method: "GET",              //方法
 	}
 }
 
